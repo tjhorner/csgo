@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CS:GO LAN Tournament</title>
+
+    <style media="screen">
+      body, html{
+        margin: 0;
+        background: rgba(0, 0, 0, 0.9);
+      }
+
+      .typeform-share{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 46%;
+        font-size: 2em;
+        text-decoration: none;
+        font-family: monospace;
+        color: white;
+      }
+
+      .mute{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 55%;
+        font-size: 1em;
+        text-decoration: none;
+        font-family: monospace;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <audio src="/music/chooseteam.mp3" id="music" autoplay></audio>
+    <a class="typeform-share link" href="https://hornertj.typeform.com/to/fxRzZr" data-mode="1" target="_blank">pre-register here</a>
+    <a href="#" class="mute" onclick="mute()">mute</a>
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+
+    <script>
+      music.volume = 0.1;
+
+      function mute(){ music.volume = 0 }
+    </script>
+  </body>
+</html>
